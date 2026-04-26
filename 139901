@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math table printer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .main{
+            border: 1px solid #ccc;
+            width: 90%;
+            max-width: 300px;
+            padding: 20px;
+            margin: 20px auto;
+        }
+        input {
+            border-radius: 12px;
+            padding-left: 5px;
+            border: 1px solid #ccc;
+        }
+        button{
+            border-radius: 12px;
+            background: slateblue;
+            color: white;
+            border: none;
+        }
+        #result{
+            font-size: 12px;
+            color: blue;
+            font-family: monospace;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h3>Math table printer</h3>
+        <input type ="text" id="userInput" placeholder="Enter your age">
+        <button onclick="myFun()">Check</button>
+        <div id="result"></div>
+    </div>
+  
+  
+  <script>
+function myFun(){
+    let a = 1;
+    let b = document.getElementById("userInput").value;
+    let output = document.getElementById("result");
+    let multi = a * b ;
+    
+    while(a <= 10){
+    
+        document.write(a + " x "+ b + " = " + a * b + "<br>");
+        
+        a++;
+    }
+
+}
+
+  </script>
+  
+</body>
+</html>
